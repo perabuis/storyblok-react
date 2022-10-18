@@ -4,11 +4,14 @@ import Footer from "./Footer";
 
 
 const Layout = ({ children }) => (
-  <div className="bg-slate-100">
-  <Head/>
-    {children}
-  <Footer />
+  <div>
+    <Head/>
+      <div className="bg-slate-100">
+        {children}
+      </div>
+    <Footer />
   </div>
+ 
 );
 
 export default Layout;

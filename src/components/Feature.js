@@ -1,9 +1,10 @@
 import { storyblokEditable } from "@storyblok/react";
  
 const Feature = ({ blok }) => (
-  <div {...storyblokEditable(blok)} className="column feature" >
-      <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{blok.name}</h1>
-      <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src={blok.image.filename} alt="feature"/>
+  <div {...storyblokEditable(blok)} className="column body-font" >
+  
+      <p className="mx-auto text-center title-font sm:text-xl text-2xl mb-4 font-medium text-teal-500">{blok.name}</p>
+      <img className="mx-auto object-cover object-center w-4/5 mb-8 rounded-xl" src={blok.image.filename} alt="feature"/>
   </div>
 );
  
