@@ -8,11 +8,15 @@ import Page from './components/Page';
 import Grid from './components/Grid';
 import Feature from './components/Feature';
 import Teaser from './components/Teaser';
-import Config from "./components/Config";
+
 import HeaderMenu from "./components/HeaderMenu";
 import MenuLink from "./components/MenuLink";
+
 import HeroSection from "./components/Hero-section";
 import Explanation from "./components/Explanation";
+
+import Article from './components/Article';
+import FeatureArticle from './components/FeatureArticle';
  
 storyblokInit({
   accessToken: "22HQOJNd0Bcywe5NDYvhfQtt",
@@ -22,11 +26,12 @@ storyblokInit({
     teaser: Teaser,
     feature: Feature,
     grid: Grid,
-     config: Config,
-  "header_menu": HeaderMenu,
-  "menu_link": MenuLink,
-  'hero-section': HeroSection,
-      explanation: Explanation,
+    header_menu: HeaderMenu,
+    "menu_link": MenuLink,
+    'hero-section': HeroSection,
+    explanation: Explanation,
+    article: Article,
+     "feature-article": FeatureArticle,
   }
 });
 const root = ReactDOM.createRoot(document.getElementById('root'));
